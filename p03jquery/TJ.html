@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HELLO</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	
+	<header>
+		<h1 class="judul">Wellcome</h1>
+		<p class="deskripsi"></p>
+	</header>
+<div class="topnav">
+		<a onclick="alert('Kamu mau kembali ke halaman utama?')" href="../index.html"><<</a>
+    <div class="topnav-centered">
+  		<a onclick="alert('Anda akan sedang berada tabel Tabel JQuary')" class="active" href="TJ.html">TJquery</a>
+  	</div>
+  		<a onclick="alert('Anda akan memasuki Tabel Biasa')" class="#active" href="../p03/TB.html">10 sahabat</a>
+  		<a onclick="alert('Anda akan memasuki Tabel Css')" class="#active" href="../p03css/TC.html">5 sahabat</a>
+  	<div class="topnav-right">
+   		<a onclick="alert('Anda akan memasuki Biodata')" class="#active"  href="../biodata.html">Biodata</a>
+	  </div>
+ </div>
+
+<h1 class="title">The Top 10 TJ</h1>
+    <table class="tabel">
+      <tr class="kepala-tabel">
+        <th>Noo</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th colspan="2">Action</th>
+      </tr>
+    <tr>
+        <td class="text">1</td>
+        <td class="text">David Riki</td>
+        <td class="text">Samadikun</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">2</td>
+        <td class="text">Burhan</td>
+        <td class="text">Jalan Saleh</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">3</td>
+        <td class="text">Jana</td>
+        <td class="text">Adi Darma</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">4</td>
+        <td class="text">Pupus</td>
+        <td class="text">Cimahi</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">5</td>
+        <td class="text">Pratama</td>
+        <td class="text">Bima</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">6</td>
+        <td class="text">Rindi</td>
+        <td class="text">Jalan Saleh</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">7</td>
+        <td class="text">Tio</td>
+        <td class="text">Babakan</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">8</td>
+        <td class="text">Sandra</td>
+        <td class="text">Kesambi</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">9</td>
+        <td class="text">Nur Fitri</td>
+        <td class="text">Sambeng</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+    <tr>
+        <td class="text">10</td>
+        <td class="text">Dipa</td>
+        <td class="text">Samadikun</td>
+        <td class="text">Edit</td>
+        <td class="text">Delete</td>
+      </tr>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){ $('.text').click(function(){ 
+  let text = $(this).text();
+  alert(`Anda mengklik text yang berisi text "${text}"`);
+   if(text!='Delete'){ 
+    let text2 = prompt('Mau diubah?:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+</script>
+
+    <script src="script.js"></script>
+
+	<footer>
+		<h1 class="footer">by# Suparman : 41215567
+	</footer>
+</body>
+</html>
